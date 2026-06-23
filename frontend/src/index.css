@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100vh; }
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #FAF8F3;
+  color: #1B2A4A;
+}
+table { font-variant-numeric: tabular-nums; }
+::selection { background: #E0922F33; }
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; }
+a { color: inherit; }
+
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible {
+  outline: 2px solid #E0922F;
+  outline-offset: 2px;
+}
+
+@media print {
+  .no-print { display: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
